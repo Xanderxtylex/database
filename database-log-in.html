@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            color: rgb(91, 91, 91);
+            background-color: rgb(27, 27, 239);
+            height: 890px;
+            width: 1000px;
+            padding: 50px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container2 {
+            color: rgb(91, 91, 91);
+            background-color: rgb(238, 238, 238);
+            height: 430px;
+            width: 1100px;
+            margin-left: -330px;
+        }
+
+        .main2 {
+            background-color: white;
+            height: 370px;
+            width: 470px;
+            padding-left: 40px;
+            text-align: justify;
+            margin-left: 280px;
+            box-shadow: 0px 40px 50px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .main {
+            background-color: white;
+            height: 850px;
+            width: 470px;
+            padding: 20px;
+            text-align: justify;
+            margin-left: 230px;
+            box-shadow: 0px 8px 50px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 50px;
+            font-size: 25px;
+        }
+
+        .inputs {
+            padding-left: 30px;
+
+        }
+
+        .name-box {
+            margin-bottom: 30px;
+
+        }
+
+        .mail-box {
+            margin-top: 40px;
+
+        }
+
+        .telephone-box {
+            margin-top: 40px;
+
+        }
+
+        .username-box {
+            margin-top: 40px;
+
+        }
+
+        .password-box {
+            margin-top: 40px;
+
+        }
+
+        .repeat-box {
+            margin-top: 40px;
+
+        }
+
+        .location-box {
+            margin-top: 40px;
+
+        }
+
+        input {
+            border: none;
+            border-bottom: 2px solid rgb(165, 165, 165);
+            width: 400px;
+
+        }
+
+        .submit {
+            height: 50px;
+            width: 400px;
+            border: none;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(24, 24, 238);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h2>
+                Create an account
+
+            </h2>
+            <form action="userdata.php" method="POST">
+                <div class="inputs">
+                    <div class="name-box">
+                        <p>Name</p>
+                        <input name="name" type="text" placeholder="XanderXtylex" class="name">
+                    </div>
+
+                    <div class="mail-box">
+                        <p>E-mail</p>
+                        <input name="email" type="email" placeholder="xanderxavier@gmail.com" class="mail">
+                    </div>
+                    <div class="telephone-box">
+                        <p>Telephone</p>
+                        <div>
+                            <input name="number" type="number" placeholder="08127266203" class="telephone">
+
+                        </div>
+                        <div class="username-box">
+                            <p>Username</p>
+                            <input name="username" type="text" class="username" placeholder="username">
+                        </div>
+
+                    </div>
+                    <div class="container2">
+                        <div class="main2">
+
+                            <div class="password-box">
+                                <p>Password</p>
+                                <input name="password" type="text" class="password" placeholder="password">
+                            </div>
+                            <div class="repeat-box">
+                                <p>Repeat password</p>
+                                <input name="repeat" type="text" class="repeat" placeholder="repeat-password">
+                            </div>
+
+                            <div class="location-box">
+                                <p>Location</p>
+                                <input name="location" type="text" class="location" placeholder="location">
+                            </div>
+                            <input type="submit" class="submit">
+                        </div>
+                    </div>
+
+            </form>
+
+
+</html>
